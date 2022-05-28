@@ -14,7 +14,7 @@
     "@babel/preset-react": "^7.16.7",
     "@vitejs/plugin-vue": "^2.3.3",
     "autoprefixer": "^10.4.7",
-    "framer-motion": "^6.3.3",
+    "framer-motion": "^6.3.4",
     "postcss-nested": "^5.0.6",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",

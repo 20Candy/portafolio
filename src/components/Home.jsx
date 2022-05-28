@@ -2,10 +2,22 @@ import { motion } from 'framer-motion'
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import styled, { keyframes } from 'styled-components'
+import { css } from 'styled-components'
 import img from "../assets/images/cat.gif"
 import YinYang from '../assets/images/yinyan.jpg'
+import Intro from './Intro'
 
 import SocialIcons from '../components/SocialIcons'
+
+
+const rotate = keyframes`
+from{
+    transform: rotate(0);
+}
+to{
+    transform: rotate(360deg);
+}
+`
 
 const Center = styled.button`
 position: absolute;
@@ -16,7 +28,6 @@ border: none;
 outline: none;
 background-color: transparent;
 cursor: pointer;
-
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -24,13 +35,34 @@ align-items: center;
 transition: all 1s ease;
 
 &>:first-child{
-    
+    animation: ${rotate} infinite 1.5s linear;
+    border-radius:50%
 }
 
 &>:last-child{
     display: ${props => props.click ? 'none' :'inline-block'  };
     padding-top: 1rem;
 }
+`
+
+const DarkDiv = styled.div`
+position: absolute;
+top: 0;
+background-color: #000000;
+bottom: 0;
+right: 50%;
+width: ${props => props.click ? '50%' : '0%'};
+height: ${props => props.click ? '100%' : '0%'};
+z-index:1;
+transition: height 0.5s ease, width 1s ease 0.5s;
+`
+
+const SKILLS = styled(NavLink)`
+    color: ${props => props.click ? 'white' : 'black'};
+`
+
+const WORK = styled(NavLink)`
+    color: ${props => props.click ? 'white' : 'black'};
 `
 
 const Main = () => {
@@ -43,10 +75,12 @@ const Main = () => {
         <div className='MainContainer'>
             <img className="Image" src = {img} />
 
-            <SocialIcons />
+            <DarkDiv   click={click}/>
+
+            <SocialIcons  click ={click}/>
 
             <Center click={click}>
-                <img src={YinYang}  onClick={()=> handleClick()} width={click ? 120 : 200} height={click ? 120 : 200} fill='currentColor' />
+                <img src={YinYang}  onClick={()=> handleClick()}  width={click ? 120 : 200} height={click ? 120 : 200}/>
                 <span>click here</span>
             </Center>
            
@@ -67,7 +101,7 @@ const Main = () => {
                 </motion.h2>
             </NavLink>
             
-            <NavLink className="Work" to="/work" click={+click}>
+            <WORK className="Work" to="/work" click={+click}>
                 <motion.h2
                 initial={{
                     y:-200,
@@ -82,7 +116,7 @@ const Main = () => {
                 >
                     Work
                 </motion.h2>
-            </NavLink>
+            </WORK>
 
 
             <NavLink className="About" to="/about">
@@ -102,7 +136,7 @@ const Main = () => {
                 </motion.h2>
             </NavLink>
 
-            <NavLink className="Skills" to="/skills">
+            <SKILLS  className= "Skills" to="/skills"  click={+click}>
                 <motion.h2
                 initial={{
                     y:200,
@@ -117,7 +151,9 @@ const Main = () => {
                 >
                     My Skills.
                 </motion.h2>
-            </NavLink>
+            </SKILLS>
+
+            {click ? <Intro click={click} /> : null }
 
         </div>
     )
