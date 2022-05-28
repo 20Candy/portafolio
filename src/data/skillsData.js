@@ -72,7 +72,7 @@ const skillsData = [
     },
     {
         key: '11',
-        img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Roku_logo.svg/1280px-Roku_logo.svg.png',
+        img: 'https://logos-world.net/wp-content/uploads/2021/02/Roku-Symbol.png',
         name: 'Brightscript',
         color: '#f5abb0',
         progress: '90%' , 

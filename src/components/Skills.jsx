@@ -15,7 +15,6 @@ function Skills() {
                 <div style={{backgroundColor: skill.color}}className='Description'>
                     <h1>{skill.name}</h1>
                     <ProgressBar now={60}/>
-                    <img src={skill.img}></img>
                 </div>
             )
 

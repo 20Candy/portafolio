@@ -265,8 +265,9 @@ h2,h3,h4,h5,h6{
 }
 
 .Description{
+    float:center;
     color: black;
-    width: 50vw;
+    width: 40vw;
     height: 200px;
     position:absolute;
     font-family: Big Shoulders Text;
