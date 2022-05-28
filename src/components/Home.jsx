@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import styled, { keyframes } from 'styled-components'
 import { css } from 'styled-components'
-import img from "../assets/images/cat.gif"
+// import img from "../assets/images/cat.gif"
 import YinYang from '../assets/images/yinyan.jpg'
 import Intro from './Intro'
 
@@ -73,7 +73,7 @@ const Main = () => {
 
     return (
         <div className='MainContainer'>
-            <img className="Image" src = {img} />
+            {/* <img className="Image" src = {img} /> */}
 
             <DarkDiv   click={click}/>
 
@@ -94,7 +94,7 @@ const Main = () => {
                     y:0,
                     transition: { type:'spring', duration: 1.5, delay:1}
                 }}
-                whileHover={{scale: 1.1}}
+                whileHover={{scale: 1.1, color: "#84b6f4"}}
                 whileTap={{scale: 0.9}}
                 >
                     Proyects
@@ -111,7 +111,7 @@ const Main = () => {
                     y:0,
                     transition: { type:'spring', duration: 1.5, delay:1}
                 }}
-                whileHover={{scale: 1.1}}
+                whileHover={{scale: 1.1, color: '#50c4ad'}}
                 whileTap={{scale: 0.9}}
                 >
                     Work
@@ -129,7 +129,7 @@ const Main = () => {
                     y:0,
                     transition: { type:'spring', duration: 1.5, delay:1}
                 }}
-                whileHover={{scale: 1.1}}
+                whileHover={{scale: 1.1, color: "#af82ba"}}
                 whileTap={{scale: 0.9}}
                 >
                     About.
@@ -146,7 +146,7 @@ const Main = () => {
                     y:0,
                     transition: { type:'spring', duration: 1.5, delay:1}
                 }}
-                whileHover={{scale: 1.1}}
+                whileHover={{scale: 1.1, color: "#e4747c"}}
                 whileTap={{scale: 0.9}}
                 >
                     My Skills.

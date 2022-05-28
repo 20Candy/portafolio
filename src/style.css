@@ -6,6 +6,9 @@ h2,h3,h4,h5,h6{
     font-family:'Karla', sans-serif ;
     font-weight:500;
 }
+.body{
+    margin: 0px 0px 0px 0px;
+}
 
 
 .Image{
@@ -81,3 +84,232 @@ h2,h3,h4,h5,h6{
     width: 2px;
     background-color:black;
 }
+
+/* SKILLS */
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: black;
+    height: 80rem;
+    margin: -12px -12px -12px -12px;
+    overflow: hidden;
+}
+
+.skillsHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.skillsHeader h2 {
+    font-family: var(--primaryFont);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+.skillsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    width: 100%;
+    margin-top: 3.5rem;
+    padding: 0 2rem;
+    background-color: inherit;
+    cursor: pointer;
+}
+
+.skill--scroll {
+    width: 100%;
+}
+
+
+.skill--box {
+    background: #FAFAFA;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.12);
+    border-radius: 10px;
+    width: 160px;
+    height: 160px;
+    margin: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+    transition: 300ms ease-in-out;
+}
+
+.skill--box:hover  {
+    transform: scale(1.15);
+}
+
+
+.skill--box > img {
+    height: 50px;
+    pointer-events: none;
+}
+
+
+.skill--box h3 {
+    font-family: Big Shoulders Text;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+
+@media (min-width: 992px) and (max-width: 1380px) {
+    .skills {
+        padding: 2rem 1rem 1rem 1rem;
+    }
+    .skillsContainer {
+        padding: 1.5rem;
+        margin-top: 1.5rem;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    .skills {
+        padding: 1rem;
+        min-height: 100%;
+    }
+    .skillsContainer {
+        padding: 1rem;
+        margin: 1rem 0;
+    }
+    .skillsHeader h2 {
+        font-size: 3.2rem;
+    }
+    .skill--box {
+        width: 150px;
+        height: 150px;
+        margin: 1.2rem;
+        padding: 2rem 1rem;
+    }
+
+    .skill--box > img {
+        height: 45px;
+    }
+
+
+    .skill--box h3 {
+        font-size: 20px;
+        margin-top: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .skills {
+        padding: 0.5rem;
+    }
+    .skillsContainer {
+        padding: 0.5rem;
+    }
+    .skillsHeader h2 {
+        font-size: 3rem;
+    }
+
+    .skill--scroll {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .skill--box {
+        width: 135px;
+        height: 135px;
+        margin: 1.2rem;
+        padding: 2rem 1rem;
+    }
+
+    .skill--box > img {
+        height: 40px;
+    }
+
+    .skillsHeader h2 {
+        font-size: 2.5rem;
+    }
+
+    .skill--box h3 {
+        font-size: 18px;
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+}
+  
+@media only screen and (min-device-width: 320px) and (max-device-width: 
+  480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
+
+}
+
+
+@media only screen and (device-width: 768px) {
+
+}
+
+.skillBoxStyle {
+    background-color: '#e4747c';
+    box-shadow: 0px 0px 30px white;
+}
+
+.Description{
+    color: black;
+    width: 50vw;
+    height: 200px;
+    position:absolute;
+    font-family: Big Shoulders Text;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    border-radius: 10px;
+    margin-top: 500px;
+
+    -webkit-animation: Description 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: Description 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.Description>h1{
+    font-size: 30px;
+    text-align: left;
+    padding: 0px 0px 0px 20px;
+}
+
+.Description.Progressbar{
+    z-index: 1;
+}
+
+.Description>img{
+    position: absolute; 
+    top: 10px;
+    right: 10px;
+    height: 50px;
+}
+
+@-webkit-keyframes Description {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes Description{
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
