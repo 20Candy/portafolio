@@ -10,7 +10,7 @@ import "react-vertical-timeline-component/style.min.css";
 function App() {
   return (
     <div className="work">
-      <h1 className="title">Work</h1>
+      <h1 className="title">Work - Timeline</h1>
       <VerticalTimeline>
         {worksData.map((element) => {
           let isWorkIcon = element.icon === "work";
