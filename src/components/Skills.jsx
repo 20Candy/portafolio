@@ -2,7 +2,7 @@ import React,{ useState } from 'react';
 import Marquee from "react-fast-marquee";
 import styled from 'styled-components'
 import skillsData  from '../data/skillsData'
-import ProgressBar from 'react-bootstrap/ProgressBar'
+// import ProgressBar from 'react-bootstrap/ProgressBar'
 
 function Skills() {
     const [current, setCurrent] = useState("");
@@ -14,7 +14,7 @@ function Skills() {
             return(
                 <div style={{backgroundColor: skill.color}}className='Description'>
                     <h1>{skill.name}</h1>
-                    <ProgressBar now={60}/>
+                    {/* <ProgressBar now={60}/> */}
                 </div>
             )
 

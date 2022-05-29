@@ -1,4 +1,4 @@
-import { BrowserRouter, Link, Route, Switch } from 'react-router-dom'
+import { BrowserRouter, Link, Route, Routes } from 'react-router-dom'
 import { AnimatePresence } from "framer-motion";
 
 // pages
@@ -15,21 +15,13 @@ function App() {
     <SoundBar />
     <AnimatePresence exitBeforeEnter>
       <BrowserRouter>
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/proyects/">
-            <Proyects />
-          </Route>
-          <Route path="/skills">
-            <Skills />
-          </Route>
-          <Route path="/work">
-            <Work />
-          </Route>
-        </Switch>
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/about" element ={<About/>} ></Route>
+          <Route path="/proyects/" element ={<Proyects />} ></Route>
+          <Route path="/skills" element={<Skills />}></Route>
+          <Route path="/work" element ={<Work />} ></Route>
+        </Routes>
       </BrowserRouter>
     </AnimatePresence>
   
