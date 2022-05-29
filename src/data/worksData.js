@@ -36,7 +36,7 @@ const worksData = [
       location: "Guatemala, Guatemala",
       description:
         "University",
-      date: "2019 - actuality",
+      date: "2019 - present",
       color: "#76d5b5",
       img: "https://www.universidadesonline.com.gt/logos/original/logo-universidad-del-valle-de-guatemala.png", 
     },
