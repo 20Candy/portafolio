@@ -1,4 +1,4 @@
-import Ulearn from '../assets/images/ULearn.png';
+import Ulearn from '../assets/images/Ulearn.png';
 import Pinterest from '../assets/images/pinterest.png';
 import Portfolio from '../assets/images/portafolio.png';
 
