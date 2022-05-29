@@ -9,7 +9,7 @@ function Projects() {
             {projectsData.length > 0 && (
                 <div className="projects" id="projects" style={{backgroundColor: 'white'}}>
                     <div className="projects--header">
-                        <h1 style={{color: 'black'}}>Projects</h1>
+                        <h1 style={{color: '#5086c1'}}>Projects</h1>
                     </div>
                     <div className="projects--body">
                         <div className="projects--bodyContainer">
@@ -23,6 +23,7 @@ function Projects() {
                                     code={project.code}
                                     demo={project.demo}
                                     image={project.image}
+                                    color={project.color}
                                 />
                             ))}
                         </div> 

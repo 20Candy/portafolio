@@ -1,29 +1,37 @@
+import Ulearn from '../assets/images/ULearn.png';
+import Pinterest from '../assets/images/pinterest.png';
+import Portfolio from '../assets/images/portafolio.png';
+
 export const projectsData = [
     {
         id: 1,
-        projectName: 'Employee Management',
-        projectDesc: 'This project aims to build an employee management system that consolidates all information of a company',
-        tags: ['React', 'CSS', 'Material Ui'],
-        code: 'https://github.com/hhhrrrttt222111/developer-portfolio',
-        demo: 'https://github.com/hhhrrrttt222111/developer-portfolio',
-        image: 'https://josefacchin.com/wp-content/uploads/2020/02/como-quitar-el-fondo-de-una-imagen.png'
+        projectName: 'Portfolio',
+        projectDesc: 'This project aims to show the principal information about me and my work',
+        tags: ['React', 'CSS', 'Boodstrap'],
+        code: 'https://github.com/20Candy/portafolio.git',
+        demo: 'https://carolarevalo.tech/',
+        image: Portfolio, 
+        color: '#b2dafa'
     },
     {
         id: 2,
-        projectName: 'Railway Tracking',
-        projectDesc: 'This project is a railway tracking system that allows users to obtain relevant information about train timing.',
-        tags: ['Django', 'Tailwind CSS'],
-        code: 'https://github.com/hhhrrrttt222111/developer-portfolio',
-        demo: 'https://github.com/hhhrrrttt222111/developer-portfolio',
-        image: 'https://josefacchin.com/wp-content/uploads/2020/02/como-quitar-el-fondo-de-una-imagen.png'
+        projectName: 'U-Learn',
+        projectDesc: 'This project aims to help students from University to have a better communication and organization',
+        tags: ['React', 'CSS', 'Boodstrap'],
+        code: 'https://github.com/Ldsc2002/ULearn-React-UI.git',
+        demo: 'https://ldsc2002.github.io/ULearn-React-UI/#/',
+        image: Ulearn, 
+        color: '#84b6f4'
     },
     {
         id: 3,
-        projectName: 'Weather App',
-        projectDesc: 'Weather forecast systems and applications predict weather conditions based on multiple parameters.',
-        tags: ['Django', 'CSS', 'Material Ui'],
-        code: 'https://github.com/hhhrrrttt222111/developer-portfolio',
-        demo: 'https://github.com/hhhrrrttt222111/developer-portfolio',
-        image: 'https://josefacchin.com/wp-content/uploads/2020/02/como-quitar-el-fondo-de-una-imagen.png'
+        projectName: 'Pinterest',
+        projectDesc: 'This proyects aims to replicate Pinterest for educational purposes only ',
+        tags: ['React', 'CSS', 'Boodstrap'],
+        code: 'https://github.com/20Candy/PinterestReact.git',
+        demo: 'http://juanelcaballo.club/20461/Pinterest/',
+        image: Pinterest, 
+        color: '#6a9eda'
+
     },
 ]
