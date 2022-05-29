@@ -4,7 +4,6 @@ import SingleProject from './SingleProject';
 
 function Projects() {
 
-
     return (
         <>
             {projectsData.length > 0 && (
