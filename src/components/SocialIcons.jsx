@@ -20,7 +20,6 @@ filter: ${props => props.click? 'invert(100%)' : 'invert(0)' };
 const SocialIcons = (props) => {
     const { click } = props
 
-
     return (
         <div className='Icons'>
             <motion.div

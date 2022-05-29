@@ -25,7 +25,7 @@ function Skills() {
     return (
         <div className="skills">
             <div className="skillsHeader">
-                <h2 style={{color: 'white'}}>Skills</h2>
+                <h2 style={{color: '#e4717a'}}>Skills</h2>
             </div>
             <button className="skillsContainer">
                 <div className="skill--scroll">
