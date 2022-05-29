@@ -1,6 +1,6 @@
 import React,{ useContext} from 'react';
 import { projectsData } from '../data/projectsData'
-import SingleProject from './SingleProject';
+import SingleProject from './SingleProyect';
 
 function Projects() {
 
