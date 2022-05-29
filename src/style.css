@@ -105,7 +105,6 @@ h2,h3,h4,h5,h6{
 }
 
 .skillsHeader h2 {
-    font-family: var(--primaryFont);
     font-style: normal;
     font-weight: bold;
     font-size: 3.5rem;
@@ -156,7 +155,6 @@ h2,h3,h4,h5,h6{
 
 
 .skill--box h3 {
-    font-family: Big Shoulders Text;
     font-style: normal;
     font-weight: 500;
     font-size: 22px;
@@ -271,7 +269,6 @@ h2,h3,h4,h5,h6{
     width: 40vw;
     height: 200px;
     position:absolute;
-    font-family: Big Shoulders Text;
     font-style: normal;
     font-weight: 500;
     font-size: 22px;
@@ -342,7 +339,6 @@ h2,h3,h4,h5,h6{
 .projects--header h1 {
     margin-bottom: 40px;
     font-size: 3.5rem;
-    font-family: Big Shoulders Text;
 }
 
 .projects--body {
@@ -442,7 +438,6 @@ h2,h3,h4,h5,h6{
 }
 
 .projectContent > h2 {
-    font-family: Big Shoulders Text;
     font-style: normal;
     font-weight: 600;
     font-size: 1.525rem;
@@ -500,7 +495,6 @@ h2,h3,h4,h5,h6{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: Big Shoulders Text;
 }
   
 .singleProject:hover .project--desc{
@@ -528,10 +522,47 @@ h2,h3,h4,h5,h6{
 }
 
 .project--lang > span {
-    font-family: Big Shoulders Text;
     font-weight: 500;
     word-break: break-word; 
     line-height: 100%;
 }
+
+/* TIMELINE */
+.work{
+    background-color: black;
+    margin: -30px -15px -15px -15px;
+}  
+  .title {
+    font-size: large;
+    text-align: center;
+    font-size: 40px;
+    color:#50c4ad ;
+    padding: 40px;
+  }
+  
+  h3 {
+    padding-top: 0.25em;
+  }
+  
+  .vertical-timeline-element-content {
+    box-shadow: 0 0.25em 0.5em 0 #b9ecd9,
+      0 0.4em 1.25em 0 #b9ecd9 !important;
+    padding: 2em 3em !important;
+  }
+  
+  
+  #description {
+    margin: 1.5em 0 2em 0;
+  }
+  
+  
+  @media only screen and (max-width: 1700px) {
+    .vertical-timeline-element-date {
+      display: block !important;
+      float: none !important;
+      margin-top: 1.5em;
+      color:   #76d5b5;
+    }
+  }
 
 
