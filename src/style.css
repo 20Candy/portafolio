@@ -342,7 +342,7 @@ h2,h3,h4,h5,h6{
 .projects--header h1 {
     margin-bottom: 40px;
     font-size: 3.5rem;
-    font-family: var(--primaryFont);
+    font-family: Big Shoulders Text;
 }
 
 .projects--body {
@@ -429,6 +429,7 @@ h2,h3,h4,h5,h6{
     cursor: pointer;
     overflow: hidden;
 
+
 }
 
 .projectContent {
@@ -441,7 +442,7 @@ h2,h3,h4,h5,h6{
 }
 
 .projectContent > h2 {
-    font-family: var(--primaryFont);
+    font-family: Big Shoulders Text;
     font-style: normal;
     font-weight: 600;
     font-size: 1.525rem;
@@ -450,8 +451,9 @@ h2,h3,h4,h5,h6{
 }
 
 .projectContent > img {
+    margin-top: -5vw;
     width: 100%;
-    height: 60%;
+    height: 50%;
     transition: opacity 0.7s 0.3s;
 }
 
@@ -479,10 +481,6 @@ h2,h3,h4,h5,h6{
     margin-left: 10px
 }
 
-a:hover{
-    
-}
-
 .singleProject:hover .project--showcaseBtn a:nth-child(2) {
     transform: translateX(-140px) scale(1.1) !important;
 }
@@ -502,7 +500,7 @@ a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: var(--primaryFont);
+    font-family: Big Shoulders Text;
 }
   
 .singleProject:hover .project--desc{
@@ -530,7 +528,7 @@ a:hover{
 }
 
 .project--lang > span {
-    font-family: var(--primaryFont);
+    font-family: Big Shoulders Text;
     font-weight: 500;
     word-break: break-word; 
     line-height: 100%;
