@@ -530,6 +530,8 @@ h2,h3,h4,h5,h6{
 /* TIMELINE */
 .work{
     background-color: black;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
     margin: -30px -15px -15px -15px;
 }  
   .title {
@@ -542,12 +544,20 @@ h2,h3,h4,h5,h6{
   
   h3 {
     padding-top: 0.25em;
+    margin-bottom: 10px !important;
   }
   
   .vertical-timeline-element-content {
     box-shadow: 0 0.25em 0.5em 0 #b9ecd9,
       0 0.4em 1.25em 0 #b9ecd9 !important;
     padding: 2em 3em !important;
+  }
+
+  .vertical-timeline-element-content>img {
+    height: 50px;
+    position: absolute;
+    bottom:10px;
+    right:10px
   }
   
   
@@ -564,5 +574,6 @@ h2,h3,h4,h5,h6{
       color:   #76d5b5;
     }
   }
+
 
 

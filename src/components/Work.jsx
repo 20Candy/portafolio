@@ -8,29 +8,29 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 
 function App() {
-
   return (
     <div className="work">
-      <h1 className="title">Work</h1>
+      <h1 className="title">Timeline</h1>
       <VerticalTimeline>
         {worksData.map((element) => {
+          let isWorkIcon = element.icon === "work";
+
           return (
             <VerticalTimelineElement
               key={element.key}
               date={element.date}
-              icon = {element.icon}
-              color= {element.color}
+              dateClassName="date"
+              iconStyle={ {background: element.color }}
             >
               <h3 className="vertical-timeline-element-title">
                 {element.title}
               </h3>
-
               <h5 className="vertical-timeline-element-subtitle">
                 {element.location}
               </h5>
-
               <p id="description">{element.description}</p>
-
+              <img src= {element.img}></img>
+              
             </VerticalTimelineElement>
           );
         })}
