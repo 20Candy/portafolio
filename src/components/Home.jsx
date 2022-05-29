@@ -2,8 +2,6 @@ import { motion } from 'framer-motion'
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import styled, { keyframes } from 'styled-components'
-import { css } from 'styled-components'
-// import img from "../assets/images/cat.gif"
 import YinYang from '../assets/images/yinyan.jpg'
 import Intro from './Intro'
 

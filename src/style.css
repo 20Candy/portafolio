@@ -31,6 +31,15 @@ h2,h3,h4,h5,h6{
 
 }
 
+.Home{
+    color: black;
+    position: absolute;
+    text-decoration: none;
+    left: 50%;
+    z-index:1;
+
+}
+
 .Work{
     color: black;
     position: absolute;
