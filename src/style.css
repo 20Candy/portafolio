@@ -759,7 +759,6 @@ position: relative;
       --img-size: 200px;
       left: 50%;
       top: 30%;
-      border: 8px solid #eaeaea;
       transform: translate(-50%, -50%);
     }
     .landing--container-left {
@@ -853,6 +852,24 @@ position: relative;
 }
 
   
+.btn {
+
+  padding: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: black;
+  border-radius: 10px;
+  font-weight: bold;
+  background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+ }
+
+
+.btn:hover {
+  background-position: right center; 
+}
+
   
 
 

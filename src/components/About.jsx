@@ -39,7 +39,7 @@ function Landing() {
                                     target='_blank'
                                     rel='noreferrer'
                                 >
-                                    <button className="resumeButton">
+                                    <button className="btn">
                                         Download CV
                                     </button>
                                 </a>

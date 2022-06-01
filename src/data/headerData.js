@@ -4,7 +4,7 @@ import img from '../assets/images/me.png';
 export const headerData = {
     name: 'Carol Arevalo',
     title: "Developer",
-    desciption:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,  ",
+    desciption:"I am currently a computer science engineering student and a Roku developer. I am a creative person who likes to design. I also like challenges and learning new things constantly. Download my resume for more information!",
     image: img,
     resumePdf: resume,
 }
