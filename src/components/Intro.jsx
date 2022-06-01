@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import {motion} from 'framer-motion'
+import { motion } from 'framer-motion'
 
 const Box = styled(motion.div)`
 
@@ -63,12 +63,12 @@ justify-content: space-evenly;
 }
 `
 
-const Intro = () => {
+function Intro() {
     return (
         <Box
-        initial={{height:0}}
-        animate={{height: '55vh'}}
-        transition={{ type: 'spring', duration:2, delay:1 }}
+          initial={{ height: 0 }}
+          animate={{ height: '55vh' }}
+          transition={{ type: 'spring', duration: 2, delay: 1 }}
         >
             <SubBox>
                 <Text>
@@ -79,11 +79,10 @@ const Intro = () => {
             </SubBox>
             <SubBox>
                 <motion.div
-                    initial={{opacity:0}}
-                    animate={{opacity: 1}}
-                    transition={{ duration:1, delay:2 }}
-                >
-                </motion.div>
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 1, delay: 2 }}
+                />
             </SubBox>
         </Box>
     )

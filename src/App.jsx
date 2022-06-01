@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import { AnimatePresence } from "framer-motion";
+import { AnimatePresence } from 'framer-motion'
+import React from 'react'
 
 // pages
 import Home from './components/Home'
@@ -10,22 +11,24 @@ import Work from './components/Work'
 import SoundBar from './components/SoundBar'
 
 function App() {
-  return <>
+    return (
+        <>
 
-    <SoundBar />
-    <AnimatePresence exitBeforeEnter>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/about" element ={<About/>} ></Route>
-          <Route path="/proyects/" element ={<Proyects />} ></Route>
-          <Route path="/skills" element={<Skills />}></Route>
-          <Route path="/work" element ={<Work />} ></Route>
-        </Routes>
-      </BrowserRouter>
-    </AnimatePresence>
-  
-  </>
+            <SoundBar />
+            <AnimatePresence exitBeforeEnter>
+                <BrowserRouter>
+                    <Routes>
+                        <Route path="/" element={<Home />} />
+                        <Route path="/about" element={<About />} />
+                        <Route path="/proyects/" element={<Proyects />} />
+                        <Route path="/skills" element={<Skills />} />
+                        <Route path="/work" element={<Work />} />
+                    </Routes>
+                </BrowserRouter>
+            </AnimatePresence>
+
+        </>
+    )
 }
 
 export default App

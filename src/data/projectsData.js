@@ -1,8 +1,8 @@
-import Ulearn from '../assets/images/Ulearn.png';
-import Pinterest from '../assets/images/pinterest.png';
-import Portfolio from '../assets/images/portafolio.png';
+import Ulearn from '../assets/images/Ulearn.png'
+import Pinterest from '../assets/images/pinterest.png'
+import Portfolio from '../assets/images/portafolio.png'
 
-export const projectsData = [
+const projectsData = [
     {
         id: 1,
         projectName: 'Portfolio',
@@ -10,8 +10,8 @@ export const projectsData = [
         tags: ['React', 'CSS'],
         code: 'https://github.com/20Candy/portafolio.git',
         demo: 'https://carolarevalo.tech/',
-        image: Portfolio, 
-        color: '#b2dafa'
+        image: Portfolio,
+        color: '#b2dafa',
     },
     {
         id: 2,
@@ -20,8 +20,8 @@ export const projectsData = [
         tags: ['React', 'CSS'],
         code: 'https://github.com/Ldsc2002/ULearn-React-UI.git',
         demo: 'https://ldsc2002.github.io/ULearn-React-UI/#/',
-        image: Ulearn, 
-        color: '#84b6f4'
+        image: Ulearn,
+        color: '#84b6f4',
     },
     {
         id: 3,
@@ -30,8 +30,10 @@ export const projectsData = [
         tags: ['React', 'CSS'],
         code: 'https://github.com/20Candy/PinterestReact.git',
         demo: 'http://juanelcaballo.club/20461/Pinterest/',
-        image: Pinterest, 
-        color: '#6a9eda'
+        image: Pinterest,
+        color: '#6a9eda',
 
     },
 ]
+
+export default projectsData

@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react'
 import styled, { keyframes } from 'styled-components'
 
-import music from "../assets/audio/music.mp3"
+import music from '../assets/audio/music.mp3'
 
 const Box = styled.div`
 display:flex;
@@ -40,40 +40,40 @@ const play = keyframes`
 }
 `
 const Line = styled.span`
-background: ${props => props.click ? "black" : "white"};
-border: 1px solid ${props => props.click ? "white" : "black"};
+background: ${(props) => (props.click ? 'black' : 'white')};
+border: 1px solid ${(props) => (props.click ? 'white' : 'black')};
 
 animation:${play} 1s ease infinite;
-animation-play-state: ${props => props.click ? "running" : "paused"};
+animation-play-state: ${(props) => (props.click ? 'running' : 'paused')};
 height: 1rem;
 width: 2px;
 margin:0 0.1rem
 `
 
-const SoundBar = () => {
-
-    const ref = useRef(null);
-    const [click, setClick] = useState(false);
+function SoundBar() {
+    const ref = useRef(null)
+    const [click, setClick] = useState(false)
 
     const handleClick = () => {
-        setClick(!click);
+        setClick(!click)
 
-        if(!click){
-            ref.current.play();
-        }else{
-            ref.current.pause();
+        if (!click) {
+            ref.current.play()
+        } else {
+            ref.current.pause()
         }
     }
     return (
         <Box onClick={() => handleClick()}>
-            <Line click={click}/>
-            <Line click={click}/>
-            <Line click={click}/>
-            <Line click={click}/>
-            <Line click={click}/>
+            <Line click={click} />
+            <Line click={click} />
+            <Line click={click} />
+            <Line click={click} />
+            <Line click={click} />
 
-
-            <audio src={music} ref={ref}  loop />
+            <audio src={music} ref={ref} loop>
+                <track default kind="captions" />
+            </audio>
         </Box>
     )
 }
