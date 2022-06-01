@@ -13,8 +13,6 @@ function App() {
       <h1 className="title">Work - Timeline</h1>
       <VerticalTimeline>
         {worksData.map((element) => {
-          let isWorkIcon = element.icon === "work";
-
           return (
             <VerticalTimelineElement
               key={element.key}
