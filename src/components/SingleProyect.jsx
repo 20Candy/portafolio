@@ -1,9 +1,6 @@
 import React from 'react';
 import play from '../assets/images/play.svg'
 import run from '../assets/images/run.svg'
-import styled from 'styled-components'
-import { NavLink } from 'react-router-dom'
- 
 
 function SingleProject({ id, name, desc, tags, code, demo, image,color}) {
 
@@ -15,9 +12,7 @@ function SingleProject({ id, name, desc, tags, code, demo, image,color}) {
                 style={{ backgroundColor:color}}
             >
                 <div className='projectContent'>
-                    <h2
-                        style={{ color: 'black' }}
-                    >
+                    <h2>
                         {name}
                     </h2>
                     <img className= 'ImageProyect' src={image} alt={name} />
@@ -31,22 +26,13 @@ function SingleProject({ id, name, desc, tags, code, demo, image,color}) {
                         </a>
                     </div>
                 </div>
-                <p
-                    className='project--desc'
-                    style={{
-                        background: 'black',
-                        color: 'white',
-                    }}
-                >
+
+                <p className='project--desc' >
                     {desc}
                 </p>
-                <div
-                    className='project--lang'
-                    style={{
-                        background: 'black',
-                        color: 'white',
-                    }}
-                >
+
+                <div className='project--lang'>
+
                     {tags.map((tag, id) => (
                         <span key={id}>{tag}</span>
                     ))}
