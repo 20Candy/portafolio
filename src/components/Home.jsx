@@ -72,7 +72,6 @@ const Main = () => {
 
     return (
         <div className='MainContainer'>
-            {/* <img className="Image" src = {img} /> */}
 
             <DarkDiv   click={click}/>
 
